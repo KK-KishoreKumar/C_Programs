@@ -1,0 +1,13 @@
+2018-02-14 WED:kishore
+----------------------
+Implement the following using Bitwise operators:
+
+    A) w.a.p to clear 'n' bits from position 'p' in a  number?
+
+        ex:      Input    :  0101 1111 1101 , n = 3, p = 8
+                 Output   :  0101 0001 1101
+
+    B) w. a.p to reverse all the bits in a number ?
+
+        ex:   Input    :  0001 1100 1111
+                Output :  1111 0011 1000 
