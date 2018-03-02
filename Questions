@@ -1,0 +1,82 @@
+ To check if two numbers are equal without using arithmetic operators or comparison operators.
+The simplest solution for this is using Bitwise XOR operator (^). We know that, for two equal numbers XOR operator returns 0. We will use this trick to solve this problem.
+
+// C program to check if two numbers are equal 
+// without using arithmetic operators or 
+// comparison operators
+
+1) Implement the following using Bitwise operators
+	a) Wether given two numbers are equal or not?
+	b) find the maximum value of an unsigned int on your machine?
+
+2) Program to check endianness of your machine?
+
+3) w.a.p to find the intersection point of a two signle linked lists ?
+
+4) Discuss/Implement Binary search algorithm?
+
+#include<stdio.h>
+ 
+int main()
+{
+   int x = 10;
+   int y = 10;
+   if ( !(x ^ y) )
+      printf(" x is equal to y ");
+   else
+      printf(" x is not equal to y ");
+   return 0;
+}
+
+#include<stdio.h>
+ 
+int main()
+{
+   unsigned int max;
+   max = 0;
+   max = ~max;
+   printf("Max value : %u ",  max);
+  return 0;
+}    
+
+Program to check endianness of the computer.
+// C program to find if machine is little
+// endian or big endian.
+#include <stdio.h>
+int main() 
+{
+   unsigned int n = 1;
+   char *c = (char*)&n;
+   if (*c)    
+       printf("LITTLE ENDIAN");
+   else
+       printf("BIG ENDIAN");
+   return 0;
+}
+
+5) Trace the output ? 
+
+#include <stdio.h>
+int main()
+{
+    int arr[] = { 1, 5, 15, 20 };
+ 
+    for (int i = 0; i < 4; i++) 
+    {
+        switch (arr[i]) 
+        {
+        case 1 ... 6:
+            printf("%d in range 1 to 6\n", arr[i]);
+            break;
+
+        case 19 ... 20:
+            printf("%d in range 19 to 20\n", arr[i]);
+            break;
+
+        default:
+            printf("%d not in range\n", arr[i]);
+            break;
+        }
+    }
+    return 0;
+}
